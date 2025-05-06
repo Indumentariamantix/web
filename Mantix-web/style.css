@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header.navbar {
+    background-color: #111;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.marca {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.navbar-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-nav li {
+    font-size: 1.2rem;
+}
+
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+.navbar-nav a:hover {
+    background-color: #d8a47f;
+    border-radius: 5px;
+}
+
+/* Estilo de los productos */
+#productos .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px; /* Aumentado el gap de 20px a 30px */
+    margin-top: 30px;
+}
+
+.producto {
+    background: #111;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    height: 450px; /* Aumentada la altura para dar más espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.producto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Imagen de producto */
+.producto-imagen-container {
+    position: relative;
+    text-align: center;
+}
+
+.producto-imagen {
+    width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 25px; /* Aumentado el margen entre la imagen y el botón */
+    cursor: pointer;
+}
+
+.flechas-imagen {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.flecha {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.flecha:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Botón Comprar estilizado */
+.btn {
+    background: #d8a47f;
+    color: #000;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c68b56;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.modal.fade-in {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#nosotros p,
+#contacto p {
+    max-width: 800px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background: #d8a47f;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsividad: Para pantallas pequeñas */
+@media (max-width: 768px) {
+    #productos .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav a {
+        padding: 10px 0;
+    }
+}
+
+/* Nuevo estilo para el pie de página */
+footer {
+    background: #111;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Aumento el espacio entre los íconos */
+    align-items: center;
+}
+
+.social-icon img {
+    width: 40px; /* Aumenté el tamaño de los íconos */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1); /* Efecto de hover */
+}
+
+.social-icon {
+    display: inline-block;
+}
+
+/* Responsividad: adaptamos los íconos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .social-links {
+        gap: 15px; /* Reduce el espacio en pantallas pequeñas */
+    }
+
+    .social-icon img {
+        width: 35px; /* Ajuste en tamaño de los iconos para móviles */
+        height: 35px;
+    }
+}

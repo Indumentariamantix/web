@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuarto Estigma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="navbar-content">
+            <img src="img/logo.png" alt="logo de mantix" class="logo">
+            <span class="marca">Indumentaria Mantix</span>
+            <nav class="navbar-nav">
+                <ul>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+       <!-- Sección Productos -->
+    <section id="productos">
+        <div class="container">
+            <h2>Nuestros productos</h2>
+            <div class="productos-grid">
+                <!-- Producto 1 -->
+                <div class="producto">
+                    <div class="producto-imagen-container">
+                        <img src="img/buzo-frente1.jpg" alt="Buzo Frente" class="producto-imagen" id="imagen-1">
+                        <img src="img/buzo-espalda1.jpg" alt="Buzo Espalda" class="producto-imagen" id="imagen-1-back" style="display: none;">
+                        <div class="flechas-imagen">
+                            <button class="flecha izquierda" onclick="cambiarImagen(1)">&#10094;</button>
+                            <button class="flecha derecha" onclick="cambiarImagen(1)">&#10095;</button>
+                        </div>
+                    </div>
+                    <h3>Buzo Batik 4to Japon. TALLE L Y XL</h3>
+                    <p>$48000</p>
+                    <a href="https://wa.me/2284307344?text=Hola,%20estoy%20interesado%20en%20el%20Buzo%20Batik%204to%20Japon.%20Talle%20L%20y%20XL" class="btn">Comprar</a>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="producto">
+                    <div class="producto-imagen-container">
+                        <img src="img/buzo-frente2.jpg" alt="Buzo Frente" class="producto-imagen" id="imagen-2">
+                        <img src="img/buzo-espalda2.jpg" alt="Buzo Espalda" class="producto-imagen" id="imagen-2-back" style="display: none;">
+                        <div class="flechas-imagen">
+                            <button class="flecha izquierda" onclick="cambiarImagen(2)">&#10094;</button>
+                            <button class="flecha derecha" onclick="cambiarImagen(2)">&#10095;</button>
+                        </div>
+                    </div>
+                    <h3>Buzo Crushing Season. TALLE L Y XL</h3>
+                    <p>$48000</p>
+                    <a href="https://wa.me/2284307344?text=Hola,%20estoy%20interesado%20en%20el%20Buzo%20Crushing%20Season.%20Talle%20L%20y%20XL" class="btn">Comprar</a>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="producto">
+                    <div class="producto-imagen-container">
+                        <img src="img/remera-frente1.JPG" alt="Remera Frente" class="producto-imagen" id="imagen-3">
+                        <img src="img/remera-espalda1.JPG" alt="Remera Espalda" class="producto-imagen" id="imagen-3-back" style="display: none;">
+                        <div class="flechas-imagen">
+                            <button class="flecha izquierda" onclick="cambiarImagen(3)">&#10094;</button>
+                            <button class="flecha derecha" onclick="cambiarImagen(3)">&#10095;</button>
+                        </div>
+                    </div>
+                    <h3>Remera 04 Snow Over. TALLES M, L Y XL</h3>
+                    <p>$29000</p>
+                    <a href="https://wa.me/2284307344?text=Hola,%20estoy%20interesado%20en%20la%20Remera%2004%20Snow%20Over.%20Talle%20M,%20L%20y%20XL" class="btn">Comprar</a>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="producto">
+                    <div class="producto-imagen-container">
+                        <img src="img/remera-frente2.jpg" alt="Remera Frente" class="producto-imagen" id="imagen-4">
+                        <img src="img/remera-espalda2.jpg" alt="Remera Espalda" class="producto-imagen" id="imagen-4-back" style="display: none;">
+                        <div class="flechas-imagen">
+                            <button class="flecha izquierda" onclick="cambiarImagen(4)">&#10094;</button>
+                            <button class="flecha derecha" onclick="cambiarImagen(4)">&#10095;</button>
+                        </div>
+                    </div>
+                    <h3>Remera Corona. TALLE L Y XL</h3>
+                    <p>$29000</p>
+                    <a href="https://wa.me/2284307344?text=Hola,%20estoy%20interesado%20en%20la%20Remera%20Corona.%20Talle%20L%20y%20XL" class="btn">Comprar</a>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="producto">
+                    <div class="producto-imagen-container">
+                        <img src="img/remera-frente3.jpg" alt="Remera Frente" class="producto-imagen" id="imagen-5">
+                        <img src="img/remera-espalda3.jpg" alt="Remera Espalda" class="producto-imagen" id="imagen-5-back" style="display: none;">
+                        <div class="flechas-imagen">
+                            <button class="flecha izquierda" onclick="cambiarImagen(5)">&#10094;</button>
+                            <button class="flecha derecha" onclick="cambiarImagen(5)">&#10095;</button>
+                        </div>
+                    </div>
+                    <h3>Remera Cuarto Cruz 1998. TALLE M </h3>
+                    <p>$27000</p>
+                    <a href="https://wa.me/2284307344?text=Hola,%20estoy%20interesado%20en%20la%20Remera%20Cuarto%20Cruz.%20Talle%20M" class="btn">Comprar</a>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="producto">
+                    <div class="producto-imagen-container">
+                        <img src="img/remera-frente4.jpg" alt="Remera Frente" class="producto-imagen" id="imagen-6">
+                        <img src="img/remera-espalda4.jpg" alt="Remera Espalda" class="producto-imagen" id="imagen-6-back" style="display: none;">
+                        <div class="flechas-imagen">
+                            <button class="flecha izquierda" onclick="cambiarImagen(6)">&#10094;</button>
+                            <button class="flecha derecha" onclick="cambiarImagen(6)">&#10095;</button>
+                        </div>
+                    </div>
+                    <h3>Remera 04 Urban Clothing Blanca. TALLE M Y XL</h3>
+                    <p>$27000</p>
+                    <a href="https://wa.me/2284307344?text=Hola,%20estoy%20interesado%20en%20la%20Remera%2004%20Urban%20Clothing%20Blanca.%20Talle%20M%20y%20XL" class="btn">Comprar</a>
+                </div>
+
+                <!-- Producto 7 -->
+                <div class="producto">
+                    <div class="producto-imagen-container">
+                        <img src="img/remera-frente5.jpg" alt="Remera Frente" class="producto-imagen" id="imagen-7">
+                        <img src="img/remera-espalda5.jpg" alt="Remera Espalda" class="producto-imagen" id="imagen-7-back" style="display: none;">
+                        <div class="flechas-imagen">
+                            <button class="flecha izquierda" onclick="cambiarImagen(7)">&#10094;</button>
+                            <button class="flecha derecha" onclick="cambiarImagen(7)">&#10095;</button>
+                        </div>
+                    </div>
+                    <h3>Remera 04 Urban Clothing Negra. TALLE M Y L</h3>
+                    <p>$27000</p>
+                    <a href="https://wa.me/2284307344?text=Hola,%20estoy%20interesado%20en%20la%20Remera%2004%20Urban%20Clothing%20Negra.%20Talle%20M%20y%20L" class="btn">Comprar</a>
+                </div>
+
+                <!-- Producto 8 -->
+                <div class="producto">
+                    <div class="producto-imagen-container">
+                        <img src="img/remera-frente6.jpg" alt="Remera Frente" class="producto-imagen" id="imagen-8">
+                        <img src="img/remera-espalda6.jpg" alt="Remera Espalda" class="producto-imagen" id="imagen-8-back" style="display: none;">
+                        <div class="flechas-imagen">
+                            <button class="flecha izquierda" onclick="cambiarImagen(8)">&#10094;</button>
+                            <button class="flecha derecha" onclick="cambiarImagen(8)">&#10095;</button>
+                        </div>
+                    </div>
+                    <h3>Remera MOTORHEAD OVER. TALLE M </h3>
+                    <p>$27000</p>
+                    <a href="https://wa.me/2284307344?text=Hola,%20estoy%20interesado%20en%20la%20Remera%20Motorhead%20Over.%20Talle%20M" class="btn">Comprar</a>
+                </div>
+
+                <!-- Producto 9 -->
+                <div class="producto">
+                    <div class="producto-imagen-container">
+                        <img src="img/remera-frente7.jpg" alt="Remera Frente" class="producto-imagen" id="imagen-9">
+                        <img src="img/remera-espalda7.jpg" alt="Remera Espalda" class="producto-imagen" id="imagen-9-back" style="display: none;">
+                        <div class="flechas-imagen">
+                            <button class="flecha izquierda" onclick="cambiarImagen(9)">&#10094;</button>
+                            <button class="flecha derecha" onclick="cambiarImagen(9)">&#10095;</button>
+                        </div>
+                    </div>
+                    <h3>Remera RADIATE GOOD OVER. TALLE L</h3>
+                    <p>$27000</p>
+                    <a href="https://wa.me/2284307344?text=Hola,%20estoy%20interesado%20en%20la%20Remera%20Radiate%20Good%20Over.%20Talle%20L" class="btn">Comprar</a>
+                </div>
+
+                <!-- Producto 10 -->
+                <div class="producto">
+                    <div class="producto-imagen-container">
+                        <img src="img/remera-frente8.jpg" alt="Remera Frente" class="producto-imagen" id="imagen-10">
+                        <img src="img/remera-espalda8.jpg" alt="Remera Espalda" class="producto-imagen" id="imagen-10-back" style="display: none;">
+                        <div class="flechas-imagen">
+                            <button class="flecha izquierda" onclick="cambiarImagen(10)">&#10094;</button>
+                            <button class="flecha derecha" onclick="cambiarImagen(10)">&#10095;</button>
+                        </div>
+                    </div>
+                    <h3>Remera 13 WINNING OVER. TALLE L</h3>
+                    <p>$27000</p>
+                    <a href="https://wa.me/2284307344?text=Hola,%20estoy%20interesado%20en%20la%20Remera%2013%20Winning%20Over.%20Talle%20L" class="btn">Comprar</a>
+                </div>
+
+                <!-- Producto 11 -->
+                <div class="producto">
+                    <div class="producto-imagen-container">
+                        <img src="img/remera-frente9.jpg" alt="Remera Frente" class="producto-imagen" id="imagen-11">
+                        <img src="img/remera-espalda9.jpg" alt="Remera Espalda" class="producto-imagen" id="imagen-11-back" style="display: none;">
+                        <div class="flechas-imagen">
+                            <button class="flecha izquierda" onclick="cambiarImagen(11)">&#10094;</button>
+                            <button class="flecha derecha" onclick="cambiarImagen(11)">&#10095;</button>
+                        </div>
+                    </div>
+                    <h3>Remera ARTSY CR. TO. OVER. TALLE L</h3>
+                    <p>$27000</p>
+                    <a href="https://wa.me/2284307344?text=Hola,%20estoy%20interesado%20en%20la%20Remera%20Artsy%20Over.%20Talle%20L" class="btn">Comprar</a>
+                </div>
+
+                <!-- Producto 12 -->
+                <div class="producto">
+                    <div class="producto-imagen-container">
+                        <img src="img/remera-frente10.jpg" alt="Remera Frente" class="producto-imagen" id="imagen-12">
+                        <img src="img/remera-espalda10.jpg" alt="Remera Espalda" class="producto-imagen" id="imagen-12-back" style="display: none;">
+                        <div class="flechas-imagen">
+                            <button class="flecha izquierda" onclick="cambiarImagen(12)">&#10094;</button>
+                            <button class="flecha derecha" onclick="cambiarImagen(12)">&#10095;</button>
+                        </div>
+                    </div>
+                    <h3>Remera CHRONICLES XXL. TALLES M, L Y XL</h3>
+                    <p>$29000</p>
+                    <a href="https://wa.me/2284307344?text=Hola,%20estoy%20interesado%20en%20la%20Remera%20Chronicles%20XXL.%20Talle%20M,%20L%20y%20XL" class="btn">Comprar</a>
+                </div>
+
+                <!-- Producto 13 -->
+                <div class="producto">
+                    <div class="producto-imagen-container">
+                        <img src="img/remera-frente11.jpg" alt="Remera Frente" class="producto-imagen" id="imagen-13">
+                        <img src="img/remera-espalda11.jpg" alt="Remera Espalda" class="producto-imagen" id="imagen-13-back" style="display: none;">
+                        <div class="flechas-imagen">
+                            <button class="flecha izquierda" onclick="cambiarImagen(13)">&#10094;</button>
+                            <button class="flecha derecha" onclick="cambiarImagen(13)">&#10095;</button>
+                        </div>
+                    </div>
+                    <h3>Remera RECORDS SNOW. TALLE XL</h3>
+                    <p>$29000</p>
+                    <a href="https://wa.me/2284307344?text=Hola,%20estoy%20interesado%20en%20la%20Remera%20Records%20Snow.%20Talle%20XL" class="btn">Comprar</a>
+                </div>
+
+                <!-- Producto 14 -->
+                <div class="producto">
+                    <div class="producto-imagen-container">
+                        <img src="img/remera-frente12.jpg" alt="Remera Frente" class="producto-imagen" id="imagen-14">
+                        <img src="img/remera-espalda12.jpg" alt="Remera Espalda" class="producto-imagen" id="imagen-14-back" style="display: none;">
+                        <div class="flechas-imagen">
+                            <button class="flecha izquierda" onclick="cambiarImagen(14)">&#10094;</button>
+                            <button class="flecha derecha" onclick="cambiarImagen(14)">&#10095;</button>
+                        </div>
+                    </div>
+                    <h3>Remera GRAFITTI SNOW. TALLE L Y XL</h3>
+                    <p>$29000</p>
+                    <a href="https://wa.me/2284307344?text=Hola,%20estoy%20interesado%20en%20la%20Remera%20Graffiti%20Snow.%20Talle%20L%20y%20XL" class="btn">Comprar</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de imagen -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn">&times;</button>
+            <div class="flechas-imagen">
+                <button class="flecha flecha-izquierda">&#10094;</button>
+                <button class="flecha flecha-derecha">&#10095;</button>
+            </div>
+            <img id="modal-img" class="modal-img" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros">
+        <div class="container">
+            <h2>Nosotros</h2>
+            <p>Mantix es un emprendimiento local en crecimiento, dedicado a representar y distribuir la marca Cuarto Estigma. Nos movemos en el universo de la indumentaria urbana, apostando por la autenticidad, el diseño con identidad y la calidad en cada prenda. Cada pieza que ofrecemos está pensada para quienes buscan algo distinto, exclusivo y con actitud. Bienvenidos a Mantix, donde vestir es también una forma de expresión.</p>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="mailto:info@cuartoestigma.com" method="post" enctype="text/plain">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu email" required>
+                <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>Síguenos en nuestras redes sociales:</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/indumentariamantix/" target="_blank" class="social-icon instagram">
+                        <img src="img/instagram-icon.png" alt="Instagram" />
+                    </a>
+                    <a href="tel:+2284307344" class="social-icon phone">
+                        <img src="img/phone-icon.png" alt="Teléfono" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script con función cambiarImagen incluida -->
+    <script>
+        function cambiarImagen(id) {
+            const frente = document.getElementById(`imagen-${id}`);
+            const espalda = document.getElementById(`imagen-${id}-back`);
+
+            if (frente.style.display === "none") {
+                frente.style.display = "block";
+                espalda.style.display = "none";
+            } else {
+                frente.style.display = "none";
+                espalda.style.display = "block";
+            }
+        }
+
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modal-img');
+        const closeBtn = document.querySelector('.close-btn');
+        const flechaIzquierda = document.querySelector('.flecha-izquierda');
+        const flechaDerecha = document.querySelector('.flecha-derecha');
+
+        const productImages = [
+    // Buzos
+    "img/buzo-frente1.jpg", "img/buzo-espalda1.jpg",
+    "img/buzo-frente2.jpg", "img/buzo-espalda2.jpg",
+
+    // Remeras
+    "img/remera-frente1.JPG", "img/remera-espalda1.JPG",
+    "img/remera-frente2.jpg", "img/remera-espalda2.jpg",
+    "img/remera-frente3.jpg", "img/remera-espalda3.jpg",
+    "img/remera-frente4.jpg", "img/remera-espalda4.jpg",
+    "img/remera-frente5.jpg", "img/remera-espalda5.jpg",
+    "img/remera-frente6.jpg", "img/remera-espalda6.jpg",
+    "img/remera-frente7.jpg", "img/remera-espalda7.jpg",
+    "img/remera-frente8.jpg", "img/remera-espalda8.jpg",
+    "img/remera-frente9.jpg", "img/remera-espalda9.jpg",
+    "img/remera-frente10.jpg", "img/remera-espalda10.jpg",
+    "img/remera-frente11.jpg", "img/remera-espalda11.jpg",
+    "img/remera-frente12.jpg", "img/remera-espalda12.jpg"
+];
+
+
+        let currentImageIndex = 0;
+
+        function openModal(imageIndex) {
+            currentImageIndex = imageIndex;
+            modal.style.display = 'flex';
+            modalImg.src = productImages[currentImageIndex];
+        }
+
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        flechaIzquierda.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex > 0) ? currentImageIndex - 1 : productImages.length - 1;
+            modalImg.src = productImages[currentImageIndex];
+        });
+
+        flechaDerecha.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex < productImages.length - 1) ? currentImageIndex + 1 : 0;
+            modalImg.src = productImages[currentImageIndex];
+        });
+
+        document.querySelectorAll('.producto-imagen').forEach((image, index) => {
+            image.addEventListener('click', () => openModal(index));
+        });
+    </script>
+</body>
+
+</html>
